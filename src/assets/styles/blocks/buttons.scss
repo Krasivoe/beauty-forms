@@ -1,0 +1,20 @@
+@use "@/assets/styles/variables" as *;
+
+.v-btn {
+  &.btn-outlined {
+    color: $blue;
+    text-transform: uppercase;
+    border: 1px solid $blue-2;
+    background: transparent;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: #fff;
+      background: $blue-2;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+}
