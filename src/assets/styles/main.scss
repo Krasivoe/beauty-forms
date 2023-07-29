@@ -1,0 +1,9 @@
+@use "@/assets/styles/mixins/container" as *;
+
+.wrapper {
+  @include wrapper();
+}
+
+.container {
+  @include container();
+}

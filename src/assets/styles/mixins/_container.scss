@@ -1,0 +1,12 @@
+@mixin wrapper() {
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@mixin container() {
+  max-width: 1440px;
+  padding: 0 15px;
+}

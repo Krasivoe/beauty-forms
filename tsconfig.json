@@ -1,5 +1,14 @@
 {
-  "files": [],
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src*"],
+    "@~": ["public*"]
+  },
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "allowJs": true,
+    "checkJs": false
+  },
   "references": [
     {
       "path": "./tsconfig.node.json"

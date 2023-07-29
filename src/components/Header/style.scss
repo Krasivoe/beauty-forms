@@ -1,0 +1,11 @@
+@use "@/assets/styles/mixins/flex" as *;
+
+.header {
+  @include row-center();
+
+  &__inner {
+    width: 100%;
+    text-align: center;
+    background: red;
+  }
+}
