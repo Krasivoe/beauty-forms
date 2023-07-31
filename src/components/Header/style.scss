@@ -24,6 +24,10 @@
       display: flex;
       column-gap: 1rem;
 
+      &.mobile {
+        display: none;
+      }
+
       &__item {
         display: flex;
         align-items: center;
@@ -32,7 +36,28 @@
       }
     }
   }
+}
 
-  &__btn {
+@media screen and (max-width: 960px) {
+  .header {
+    &__nav {
+      flex-wrap: wrap;
+
+      .list {
+        flex-direction: column;
+        flex-basis: 100%;
+
+        &.mobile {
+          display: flex;
+        }
+
+        &__item {
+          &:first-child {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
   }
 }

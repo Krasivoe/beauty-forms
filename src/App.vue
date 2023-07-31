@@ -1,8 +1,8 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useRouter } from 'vue-router';
 import HomePage from '@/pages/HomePage/HomePage.vue';
-import { computed } from 'vue';
 import HeaderItem from '@/components/Header/HeaderItem.vue';
+import { computed } from 'vue';
 
 const router = useRouter();
 const templates = [HomePage];
@@ -14,7 +14,6 @@ const currentTemplate = computed(() => {
         const { layout } = router.currentRoute.value.meta;
 
         if (template.__name === `${layout}`) {
-            console.log('123');
             current = template;
         }
     });

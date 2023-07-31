@@ -1,16 +1,30 @@
 @use "@/assets/styles/variables" as *;
 
 .v-btn {
-  &.btn-outlined {
-    color: $blue;
+  &.btn-primary {
+    color: $blue-2;
     text-transform: uppercase;
-    border: 1px solid $blue-2;
+    border: 2px solid $blue-2;
     background: transparent;
-    transition: all 0.3s linear;
+    transition: all 0.15s linear;
 
     &:hover {
       color: #fff;
       background: $blue-2;
+    }
+  }
+
+  &.btn-menu {
+    font-weight: bold;
+    border: 1px solid $blue;
+    background: transparent !important;
+
+    span {
+      color: $blue;
+    }
+
+    &:focus {
+      outline: 1px solid $blue;
     }
   }
 }

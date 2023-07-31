@@ -8,15 +8,7 @@ import router from './router';
 import '@/assets/styles/main.scss';
 
 // Vuetify
-import 'vuetify/styles';
-import { createVuetify } from 'vuetify';
-import * as components from 'vuetify/components';
-import * as directives from 'vuetify/directives';
-
-const vuetify = createVuetify({
-    components,
-    directives
-});
+import vuetify from '@/plugins/vuetify.js';
 
 const app = createApp(App);
 
